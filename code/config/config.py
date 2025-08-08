@@ -38,6 +38,7 @@ sample_num = 1
 pm_weight = 0.1
 pt_weight = 0.1
 pmt_weight = 0.1
+tau = 0.1
 
 # model config
 seed = 3406
