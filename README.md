@@ -21,8 +21,17 @@ The code and datasets for the model UniPMT proposed in the paper: UniPMT: A Unif
    - Modifiy the `code/config/config.py` file: `data_folder = pmt_pmt`.
    - Run the evaluation through `python main.py`. Expected runing time: within 1 min on Nvidia 3090/5 seconds on Nvidia A100.
 - To reproduce the **PM** results:
-  - Modifiy the `code/config/config.py`y file: `data_folder = pm_iedbsame`
+ - Modifiy the `code/config/config.py`y file: `data_folder = pm_iedbsame`
   - Run the evaluation through `python main.py`. Expected runing time: within 1 min on Nvidia 3090/5 seconds on Nvidia A100.
+
+### Training
+To train a model from scratch, set the desired dataset in `code/config/config.py` and execute:
+
+```
+cd code
+python train.py
+```
+The script optimizes the P-M, P-T and P-M-T tasks jointly and saves the learned parameters to `model_path` in the config file.
 
 
 ### Expected output
